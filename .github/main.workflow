@@ -5,6 +5,7 @@ workflow "go-serverless" {
 
 action "serverless" {
   uses = "wintron/serverless@master"
+  args = ["deploy", "-v"]
 }
 
 action "ls" {

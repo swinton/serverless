@@ -8,7 +8,7 @@ action "serverless" {
 }
 
 action "ls" {
-  needs = ["create"]
+  needs = ["serverless"]
   uses = "wintron/command@master"
   args = ["ls", "-ltrRa", "/github", "/home"]
 }

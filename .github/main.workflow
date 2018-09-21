@@ -11,5 +11,5 @@ action "find" {
 action "payload" {
   needs = "find"
   uses = "docker://alpine"
-  runs = "find /github"
+  runs = "cat /github/workflow/event.json"
 }

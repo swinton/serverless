@@ -1,6 +1,6 @@
 workflow "on push" {
   on = "push"
-  resolves = ["find"]
+  resolves = "find"
 }
 
 action "find" {

@@ -13,3 +13,4 @@ action "payload" {
   uses = "docker://alpine"
   runs = "cat /github/workflow/event.json"
 }
+
